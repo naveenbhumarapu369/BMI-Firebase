@@ -15,7 +15,12 @@ pass.addEventListener("input", disp);
 
 async function valid(e) {
     e.preventDefault();
-
+    let reg = document.getElementById('sub');
+    reg.disabled = true;
+    setTimeout(()=>{
+        reg.disabled = false;
+    },5000);  
+    
     if (unm.value.trim() === "") {
         alert("Full Name is not entered");
         return;
