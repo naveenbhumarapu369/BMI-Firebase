@@ -1,0 +1,94 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cont{
+    height: 90vh;
+    width: 90vw;
+    margin: 5vh auto auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    height: 90%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    margin: 2% 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px black;
+}
+.img{
+    height: 90%;
+    width: 40%;
+    background-color: rgb(4, 0, 130);
+    margin: 2% 1%;
+    padding: 10px;
+    background-image: url("BackgroundImage.png");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 12px black;
+}
+.hedd{
+    margin-left: 10%;
+}
+form{
+    margin-left: 10%;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form input{
+    height: 10%;
+    border-radius: 10px;
+    padding-left: 4px;
+}
+#tNc{
+    height: auto;
+}
+form~p{
+    margin-left: 10%;
+}
+#sub{
+    background-color: blue;
+    height: 10%;
+    border-radius: 10px;
+    color: white;
+}
+form~p{
+    text-align: center;
+}
+span{
+    color: blue;
+}
+@media(width<=550px){
+    .img{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        background-image: url("BackgroundImage.png");
+        background-size: cover;
+    }
+}
+.vie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.vie p{
+    cursor: pointer;
+}
+body {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}

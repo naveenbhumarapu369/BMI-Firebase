@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="cont">
+        <nav><h1>BMI Calculator</h1><a href="changePassword.html">change Password</a></nav>
+        <div class="hero">
+        </div>
+        <div class="bmi">
+            <div class="calc">
+                <h1>Enter Your Details</h1>
+                <div class="cal-inp">
+                    <label for="h">Height(m) : </label>
+                    <input type="number" id="h">
+                    <label for="w">Weight(kg) : </label>
+                    <input type="number" id="w">
+                    <button onclick="calcBmi()">Calculate BMI</button>
+                </div>
+            </div>
+            <div class="disp">
+                <h1>Your BMI Result</h1>
+                <div class="res-d">
+                    <div class="res">
+                        <h3>Your BMI</h3>
+                        <h1 id="bmiR">0.00</h1>
+                    </div>
+                    <div class="cat">
+                        <h3>Catagory</h3>
+                        <h3 id="bmiC">null</h3>
+                    </div>
+                </div>
+                <p>*This is an approximate calculation</p>
+            </div>
+        </div>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>
